@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWKRed">
+<LinearLayout
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.uwp.kelly.wknote.CustomView.EditTextFont
+        android:id="@+id/note_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:paddingTop="9dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="20dp"
+        app:typeface="center_bold.otf"
+        android:hint = "Title"
+
+        android:layout_marginRight="30dp"
+        android:textColor="@color/colorWKRed"
+        android:textColorHint="@color/colorWKRed"
+        android:background="@color/colorWKWhite"/>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/done_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/done_button"
+            android:background="#00FFFFFF"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+        <com.uwp.kelly.wknote.CustomView.TextViewFont
+            android:id="@+id/done_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:clickable="false"
+            android:focusable="false"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            app:typeface="center_bold.otf"/>
+    </FrameLayout>
+
+
+</LinearLayout>
+    <com.uwp.kelly.wknote.CustomView.EditTextFont
+        android:id="@+id/note_text"
+        android:layout_width="match_parent"
+        android:hint="Your note ..."
+        android:imeOptions="actionNone"
+
+        app:typeface="center_regular.otf"
+        android:textSize="25sp"
+        android:inputType="textMultiLine"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp"
+        android:gravity="top"
+        android:background="@color/colorWKWhite"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/layout_title"/>
+</RelativeLayout>

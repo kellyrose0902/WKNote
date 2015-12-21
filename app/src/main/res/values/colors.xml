@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--Note main color scheme-->
+    <color name="colorWKRed">#e04647</color>
+    <color name="colorWKYellow">#FFC341</color>
+    <color name="colorWKBlue">#25708F</color>
+    <color name="colorWKOrange">#DF5B36</color>
+    <color name="colorWKGreen">#1EAA8D</color>
+    <color name="colorWKViolet">#4A436D</color>
+    <color name="colorWKWhite">#ffffff</color>
+    <color name="colorWKSlide">#cc4d4d4d</color>
+</resources>
